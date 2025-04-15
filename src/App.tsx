@@ -1,32 +1,29 @@
-import { useState } from 'react';
-import viteLogo from '/vite.svg';
-import reactLogo from './assets/react.svg';
-import './App.css';
+import './index.css';
+import Header from './components/Header';
+import Card from './components/Card';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Tactical Hacker</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    
+    <div className="min-h-screen bg-gradient-to-b from-blue-950 via-blue-900 to-black text-white font-sans">
+      {/* About Section */}
+      <Header />
+      <section className="p-10 text-center max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4 text-neon-green">Welcome to Tactical Hacker</h1>
+        <p className="text-lg text-gray-300">
+          Tactical Hacker is the parent company that connects and empowers a suite of innovative platforms and products.
+          Discover our network by clicking any of the portals below.
         </p>
+      </section>
+    
+      
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10">
+        <Card title="TH-Scribes" link="https://tacticalhacker.github.io/th-scribes-frontend/" />
+        <Card title="TH-Scribes" link="https://tacticalhacker.github.io/th-scribes-frontend/" />
+        <Card title="TH-Scribes" link="https://tacticalhacker.github.io/th-scribes-frontend/" />
+        <Card title="TH-Scribes" link="https://tacticalhacker.github.io/th-scribes-frontend/" />
       </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    </div>
   );
 }
 
