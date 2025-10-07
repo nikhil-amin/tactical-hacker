@@ -1,10 +1,8 @@
 import logo from './assets/th-logo.png';
 
 function App() {
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1a1a1a] via-[#202020] to-black text-white font-sans">
-
+    <div className="min-h-screen bg-gray-800 text-white">
       <div className="flex flex-col items-center justify-center px-4 pt-10">
         <div className="flex flex-col lg:flex-row items-start justify-start gap-6 max-w-6xl w-full">
           {/* Logo */}
@@ -27,8 +25,8 @@ function App() {
         </div>
       </div>
 
-    {/* Cards Section */}
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 pb-20 pt-10 max-w-7xl mx-auto">
+      {/* Cards Section */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 pb-20 pt-10 max-w-7xl mx-auto">
         {/* Your Cards here */}
         {/* Card 1 */}
         <a href="https://tacticalhacker.github.io/th-scribes/" target="_blank" rel="noopener noreferrer">
@@ -61,7 +59,6 @@ function App() {
             <p className="text-sm text-white/80">Coming Soon.....</p>
           </div>
         </a>
-        {/* (Copy from your previous code, same as before) */}
       </section>
     </div>
   );
